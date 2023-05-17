@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Currency Converter</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Currency Converter</h1>
+    <div class="input-group">
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" min="0">
+    </div>
+    <div class="input-group">
+      <label for="fromCurrency">From:</label>
+      <select id="fromCurrency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="BGN">BGN</option>
+        <option value="DIN">DIN</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="toCurrency">To:</label>
+      <select id="toCurrency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="BGN">BGN</option>
+        <option value="DIN">DIN</option>
+      </select>
+    </div>
+    <button id="convertButton">Convert</button>
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
