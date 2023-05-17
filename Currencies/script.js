@@ -7,7 +7,7 @@ const rates = {
   DIN: 108.29 
 };
 
-// Perform the currency conversion
+
 function convertCurrency() {
   const amount = parseFloat(document.getElementById('amount').value);
   const fromCurrency = document.getElementById('fromCurrency').value;
@@ -18,6 +18,6 @@ function convertCurrency() {
   document.getElementById('result').textContent = `${amount} ${fromCurrency} = ${convertedAmount.toFixed(2)} ${toCurrency}`;
 }
 
-// Attach event listener to the convert button
+
 const convertButton = document.getElementById('convertButton');
 convertButton.addEventListener('click', convertCurrency);
